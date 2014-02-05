@@ -191,6 +191,9 @@
 				CLASSPREFIX = XYZ;
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
+					D76DB81618A275C10099E43E = {
+						DevelopmentTeam = 63B7BXU3LW;
+					};
 					D76DB83118A275C10099E43E = {
 						TestTargetID = D76DB81618A275C10099E43E;
 					};
@@ -359,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPushNotif/TestPushNotif-Prefix.pch";
 				INFOPLIST_FILE = "TestPushNotif/TestPushNotif-Info.plist";
@@ -372,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPushNotif/TestPushNotif-Prefix.pch";
 				INFOPLIST_FILE = "TestPushNotif/TestPushNotif-Info.plist";
