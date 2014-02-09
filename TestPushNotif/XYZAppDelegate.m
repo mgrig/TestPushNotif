@@ -7,6 +7,8 @@
 //
 
 #import "XYZAppDelegate.h"
+#import "XYZNotifListTableViewController.h"
+#import "XYZNotifItem.h"
 
 @implementation XYZAppDelegate
 
@@ -18,6 +20,8 @@
     //[self.window makeKeyAndVisible];
     NSLog(@"didFinishLaunchingWithOptions: in dictionary: %@", launchOptions);
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    UIViewController *rootController = [self.window rootViewController];
+    NSLog(@"root controller: %@", rootController);
     return YES;
 }
 
@@ -61,6 +65,14 @@
 
 - (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     NSLog(@"didReceiveRemoteNotification: %@", userInfo);
+    XYZNotifListTableViewController *notifListController = (XYZNotifListTableViewController *) [self.window rootViewController];
+    NSString * apsValue = [[userInfo objectForKey:@"aps"] description];
+    
+    XYZNotifItem *notifItem = [[XYZNotifItem alloc] init];
+    notifItem.payload = [[apsValue stringByReplacingOccurrencesOfString:@"\n" withString:@""] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    [notifListController.notifItems addObject:notifItem];
+    [notifListController.tableView reloadData];
 }
 
 @end

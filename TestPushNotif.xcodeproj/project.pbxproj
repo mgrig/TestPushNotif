@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D742080518A75E0C000D5FC6 /* XYZNotifListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D742080418A75E0C000D5FC6 /* XYZNotifListTableViewController.m */; };
+		D742080818A75EC3000D5FC6 /* XYZNotifItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D742080718A75EC3000D5FC6 /* XYZNotifItem.m */; };
 		D76DB81B18A275C10099E43E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DB81A18A275C10099E43E /* Foundation.framework */; };
 		D76DB81D18A275C10099E43E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DB81C18A275C10099E43E /* CoreGraphics.framework */; };
 		D76DB81F18A275C10099E43E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DB81E18A275C10099E43E /* UIKit.framework */; };
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D742080318A75E0C000D5FC6 /* XYZNotifListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNotifListTableViewController.h; sourceTree = "<group>"; };
+		D742080418A75E0C000D5FC6 /* XYZNotifListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNotifListTableViewController.m; sourceTree = "<group>"; };
+		D742080618A75EC3000D5FC6 /* XYZNotifItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZNotifItem.h; sourceTree = "<group>"; };
+		D742080718A75EC3000D5FC6 /* XYZNotifItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZNotifItem.m; sourceTree = "<group>"; };
 		D76DB81718A275C10099E43E /* TestPushNotif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPushNotif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76DB81A18A275C10099E43E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D76DB81C18A275C10099E43E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,8 +118,12 @@
 				D76DB82918A275C10099E43E /* XYZAppDelegate.h */,
 				D76DB82A18A275C10099E43E /* XYZAppDelegate.m */,
 				D76DB84918A283660099E43E /* Main.storyboard */,
+				D742080318A75E0C000D5FC6 /* XYZNotifListTableViewController.h */,
+				D742080418A75E0C000D5FC6 /* XYZNotifListTableViewController.m */,
 				D76DB82C18A275C10099E43E /* Images.xcassets */,
 				D76DB82118A275C10099E43E /* Supporting Files */,
+				D742080618A75EC3000D5FC6 /* XYZNotifItem.h */,
+				D742080718A75EC3000D5FC6 /* XYZNotifItem.m */,
 			);
 			path = TestPushNotif;
 			sourceTree = "<group>";
@@ -247,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76DB82B18A275C10099E43E /* XYZAppDelegate.m in Sources */,
+				D742080518A75E0C000D5FC6 /* XYZNotifListTableViewController.m in Sources */,
 				D76DB82718A275C10099E43E /* main.m in Sources */,
+				D742080818A75EC3000D5FC6 /* XYZNotifItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +462,7 @@
 				D76DB84518A275C10099E43E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76DB84618A275C10099E43E /* Build configuration list for PBXNativeTarget "TestPushNotifTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +471,7 @@
 				D76DB84818A275C10099E43E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
