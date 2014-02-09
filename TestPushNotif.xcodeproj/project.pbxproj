@@ -19,6 +19,7 @@
 		D76DB83618A275C10099E43E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DB81E18A275C10099E43E /* UIKit.framework */; };
 		D76DB83E18A275C10099E43E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D76DB83C18A275C10099E43E /* InfoPlist.strings */; };
 		D76DB84018A275C10099E43E /* TestPushNotifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D76DB83F18A275C10099E43E /* TestPushNotifTests.m */; };
+		D76DB84A18A283660099E43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76DB84918A283660099E43E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D76DB83B18A275C10099E43E /* TestPushNotifTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestPushNotifTests-Info.plist"; sourceTree = "<group>"; };
 		D76DB83D18A275C10099E43E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D76DB83F18A275C10099E43E /* TestPushNotifTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPushNotifTests.m; sourceTree = "<group>"; };
+		D76DB84918A283660099E43E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				D76DB82918A275C10099E43E /* XYZAppDelegate.h */,
 				D76DB82A18A275C10099E43E /* XYZAppDelegate.m */,
+				D76DB84918A283660099E43E /* Main.storyboard */,
 				D76DB82C18A275C10099E43E /* Images.xcassets */,
 				D76DB82118A275C10099E43E /* Supporting Files */,
 			);
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76DB84A18A283660099E43E /* Main.storyboard in Resources */,
 				D76DB82518A275C10099E43E /* InfoPlist.strings in Resources */,
 				D76DB82D18A275C10099E43E /* Images.xcassets in Resources */,
 			);

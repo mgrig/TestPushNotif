@@ -12,10 +12,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //// Override point for customization after application launch.
+    //self.window.backgroundColor = [UIColor whiteColor];
+    //[self.window makeKeyAndVisible];
+    NSLog(@"didFinishLaunchingWithOptions: in dictionary: %@", launchOptions);
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
     return YES;
 }
 
@@ -44,6 +46,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    //const void *devTokenBytes = [deviceToken bytes];
+    NSLog(@"device token=%@", deviceToken);
+    //self.registered = YES;
+    //[self sendProviderDeviceToken:devTokenBytes];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"Error in registration. Error: %@", error);
+}
+
+- (void) application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"didReceiveRemoteNotification: %@", userInfo);
 }
 
 @end
